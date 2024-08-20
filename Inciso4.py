@@ -86,6 +86,8 @@ h = 0.01    # Tamaño del paso
 # Ejecutar el método de Runge-Kutta de orden 4
 resultados, tiempos = rungeKutta4SistemaEDOS(sistemaCometa, y0, t0, tf, h)
 
+print("Resultados", resultados)
+
 # Graficar las proyecciones xy, xz, yz
 x = resultados[:, 0]
 y = resultados[:, 1]
